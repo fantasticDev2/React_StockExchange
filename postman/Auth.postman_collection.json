@@ -1,0 +1,83 @@
+{
+	"info": {
+		"_postman_id": "28c780d8-6e93-4ff2-8ccc-57b0022fc8e3",
+		"name": "Auth",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "heroku -  Data Mapper - create token",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"email\": \"test@demo.com\",\n    \"password\": \"test\"\n}"
+				},
+				"url": {
+					"raw": "https://data-mapper-api.herokuapp.com/auth/token",
+					"protocol": "https",
+					"host": [
+						"data-mapper-api",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"auth",
+						"token"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "heroku -  Data Mapper - create users",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InNjaEBzY2hkaWdpdGFsLmNvLnVrIiwiaWF0IjoxNTYxODg5NTYwLCJleHAiOjE1NjIyNDk1NjB9.wzTq3LH-qp9eO26yNp8hs7fENUT--gB_z6ZnN4Tn2mo",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"userName\": \"test\",\n    \"password\": \"test\",\n    \"email\": \"test@demo.com\",\n    \"accessToken\": \"access-token-xxx\",\n    \"refreshToken\": \"access-token-yyy\",\n    \"roleId\": 1,\n    \"pic\": \"./assets/media/users/300_25.jpg\",\n    \"firstName\": \"Stefan\",\n    \"lastName\": \"Stefan\",\n    \"fullname\": \"Stefan\",\n    \"occupation\": \"Developer\",\n    \"companyName\": \"SCH Digital Ltd\",\n    \"phone\": \"+40756800169\",\n    \"address\": {\n        \"addressLine\": \"L-12-20 Vertex, Cybersquare\",\n        \"city\": \"San Francisco\",\n        \"state\": \"California\",\n        \"postCode\": \"45000\"\n    },\n    \"socialNetworks\": {\n        \"linkedIn\": \"https://linkedin.com/admin\",\n        \"facebook\": \"https://facebook.com/admin\",\n        \"twitter\": \"https://twitter.com/admin\",\n        \"instagram\": \"https://instagram.com/admin\"\n    },\n    \"workspaceIds\": []\n}"
+				},
+				"url": {
+					"raw": "https://data-mapper-api.herokuapp.com/users",
+					"protocol": "https",
+					"host": [
+						"data-mapper-api",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"users"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}

@@ -1,0 +1,5 @@
+{
+  "type": "Node",
+  "entity": "Person",
+  "definition_json": "[{\"id\":\"current_job\",\"label\":\"Current job\",\"placeholder\":\"current_job\",\"type\":\"text\",\"validationType\":\"string\",\"value\":\"\",\"validations\":[]},{\"id\":\"gender\",\"label\":\"Gender\",\"placeholder\":\"gender\",\"type\":\"text\",\"validationType\":\"string\",\"value\":\"\",\"validations\":[]},{\"id\":\"jobs\",\"label\":\"Jobs\",\"placeholder\":\"jobs\",\"type\":\"text\",\"validationType\":\"string\",\"value\":\"\",\"validations\":[]},{\"id\":\"linkedin\",\"label\":\"Linkedin\",\"placeholder\":\"linkedin\",\"type\":\"boolean\",\"validationType\":\"boolean\",\"value\":\"\",\"validations\":[]},{\"id\":\"location\",\"label\":\"Location\",\"placeholder\":\"location\",\"type\":\"text\",\"validationType\":\"string\",\"value\":\"\",\"validations\":[]},{\"id\":\"name\",\"label\":\"Name\",\"placeholder\":\"name\",\"type\":\"text\",\"validationType\":\"string\",\"value\":\"\",\"validations\":[]},{\"id\":\"twitter\",\"label\":\"Twitter\",\"placeholder\":\"twitter\",\"type\":\"text\",\"validationType\":\"string\",\"value\":\"\",\"validations\":[]}]"
+}

@@ -1,0 +1,28 @@
+{
+  "userName": "test",
+  "password": "test",
+  "email": "test@demo.com",
+  "accessToken": "access-token-xxx",
+  "refreshToken": "access-token-yyy",
+  "roleId": 1,
+  "pic": "some_pic.jpg",
+  "firstName": "Stefan",
+  "lastName": "Stefan",
+  "fullname": "Stefan",
+  "occupation": "Developer",
+  "companyName": "SCH Digital Ltd",
+  "phone": "+40756800169",
+  "address": {
+    "addressLine": "L-12-20 Vertex, Cybersquare",
+    "city": "San Francisco",
+    "state": "California",
+    "postCode": "45000"
+  },
+  "socialNetworks": {
+    "linkedIn": "https://linkedin.com/admin",
+    "facebook": "https://facebook.com/admin",
+    "twitter": "https://twitter.com/admin",
+    "instagram": "https://instagram.com/admin"
+  },
+  "workspaceIds": []
+}
